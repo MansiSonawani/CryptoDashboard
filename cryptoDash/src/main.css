@@ -1,0 +1,25 @@
+.app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+
+.Converter{
+    background-color: brown;
+   
+}
+.exchangerate{
+    background-color: palevioletred;
+}
+
+.news-feed{
+    background-color: blue;
+   
+}
+
+
+
+
