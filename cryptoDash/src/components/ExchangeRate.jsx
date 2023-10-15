@@ -1,13 +1,20 @@
-function ExchangeRate() {
+import React from "react"
+import { PropTypes } from "prop-types"
+
+const ExchangeRate = (props)  => {
   
 
-    return (
-      <div className="exchangerate">
-        Exchange Rate
-      </div>
+    return (<div>
+       {this.props.exchangeRa}
       
-    
+    </div>
+     
     )
-  }
+  };
+  ExchangeRate.propTypes = {
+   exchangeRa: PropTypes.number,
+   
+}
+ 
   
-  export default  ExchangeRate
+  export default  ExchangeRate;
