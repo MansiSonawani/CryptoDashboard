@@ -1,25 +1,36 @@
-.app{
+/* Styling for .Converter component */
+.Converter {
+    background-color: gray;
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 8px; /* Add rounded corners */
+    color: white; /* Set text color to white */
+    font-size: 18px; /* Adjust the font size */
+}
+
+/* Styling for .exchangerate component */
+.exchangerate {
+    background-color: gray;
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 8px; /* Add rounded corners */
+    color: white; /* Set text color to white */
+    font-size: 18px; /* Adjust the font size */
+}
+
+/* Styling for .app component (assuming you want to style .app as well) */
+.app {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    justify-content: space-between; /* Add space between components */
+    padding: 20px; /* Add padding for spacing */
 }
-
-
-
-.Converter{
-    background-color: brown;
-   
+.news-feed {
+    background-color: #f5f5f5; /* Set the background color to a light gray */
+    border-radius: 8px; /* Add rounded corners to the box */
+    padding: 20px; /* Add some padding to give it space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    font-family: Arial, sans-serif; /* Set the font family */
 }
-.exchangerate{
-    background-color: palevioletred;
-}
-
-.news-feed{
-    background-color: blue;
-   
-}
-
 
 
 

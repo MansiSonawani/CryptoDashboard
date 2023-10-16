@@ -126,7 +126,7 @@ function CurrencyConverter() {
           Convert
         </button>
       </div>
-      
+      <exchangeRate />
      
     </div>
   );

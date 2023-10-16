@@ -5,7 +5,9 @@ const ExchangeRate = (props)  => {
   
 
     return (<div>
-       {this.props.exchangeRa}
+      <h2>
+         Exchange Rate
+      </h2>
       
     </div>
      
