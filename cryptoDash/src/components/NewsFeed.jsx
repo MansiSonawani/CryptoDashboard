@@ -1,16 +1,18 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+
 const NewsFeed = () => {
   const [articles, setArticles] = useState(null)
   useEffect(() => {
+    const apiKey = import.meta.env.VITE_API_KEY;
     
     const fetchData = async () => {
       const options = {
         method: 'GET',
         url: 'https://h-crypto-news.p.rapidapi.com/cryptonews',
         headers: {
-          'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
+          'X-RapidAPI-Key': '4ca78aa6d4mshb107fc4a6741de5p14414cjsnb496ba7048a9',
           'X-RapidAPI-Host': 'h-crypto-news.p.rapidapi.com'
         }
       };

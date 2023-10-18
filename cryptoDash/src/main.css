@@ -1,36 +1,57 @@
-/* Styling for .Converter component */
+
 .Converter {
     background-color: gray;
-    padding: 10px; /* Add padding for spacing */
-    border-radius: 8px; /* Add rounded corners */
-    color: white; /* Set text color to white */
-    font-size: 18px; /* Adjust the font size */
+    padding: 10px; 
+    border-radius: 8px; 
+    color: white;
+    font-size: 18px; 
+    width: 30%;
+}
+.Converter .datacell .currency-converter{
+    background-color: #3498db;
+    color: #0cd289;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
 }
 
-/* Styling for .exchangerate component */
+.Converter .datacell .currency-converter:hover {
+
+    background-color: #e74c3c;
+}
+
+
 .exchangerate {
     background-color: gray;
-    padding: 10px; /* Add padding for spacing */
-    border-radius: 8px; /* Add rounded corners */
-    color: white; /* Set text color to white */
-    font-size: 18px; /* Adjust the font size */
+    padding: 10px; 
+    border-radius: 8px; 
+    color: white; 
+    font-size: 18px; 
 }
 
-/* Styling for .app component (assuming you want to style .app as well) */
+
 .app {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Add space between components */
-    padding: 20px; /* Add padding for spacing */
-}
-.news-feed {
-    background-color: #f5f5f5; /* Set the background color to a light gray */
-    border-radius: 8px; /* Add rounded corners to the box */
-    padding: 20px; /* Add some padding to give it space */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    font-family: Arial, sans-serif; /* Set the font family */
+    justify-content: space-between; 
+    padding: 20px; 
 }
 
+
+
+
+.news-feed {
+    background-color: #f5f5f5; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
+    width: 50%;
+}
+.exchange-rate{
+    background-color: rgb(163, 172, 200);
+}
 
 

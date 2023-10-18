@@ -1,14 +1,14 @@
 import { useState } from "react";
-import exchangeRate from "./ExchangeRate";
+import ExchangeRate from "./ExchangeRate";
 import axios from "axios";
 
 function CurrencyConverter() {
-  const Currencies = [
+  const Currencies1 = [
     "BTC",
     "ETH",
     "DASH",
     "CTR",
-    "INR",
+    
     "CVC",
     "DOGE",
     "OPT",
@@ -16,7 +16,12 @@ function CurrencyConverter() {
     "SHIB",
   ];
 
-  const [chosenCurrency1, setChosenCurrency1] = useState("INR");
+  const Currencies2 = [
+    "USD",
+    "INR"
+  ];
+
+  const [chosenCurrency1, setChosenCurrency1] = useState("BTC");
 
   const [chosenCurrency2, setChosenCurrency2] = useState("BTC");
 
@@ -25,6 +30,7 @@ function CurrencyConverter() {
   const [exchangerate, setExchangeRate] = useState(0)
 
   const [result, setResult] = useState(0)
+
 
   
 
@@ -82,7 +88,7 @@ function CurrencyConverter() {
                   className="currency-selector1"
                   onChange={(e) => setChosenCurrency1(e.target.value)}
                 >
-                  {Currencies.map((currency, _index) => (
+                  {Currencies1.map((currency, _index) => (
                     <option key={_index} value={currency}>
                       {currency}
                     </option>
@@ -112,7 +118,7 @@ function CurrencyConverter() {
                   value={chosenCurrency2}
                   onChange={(e) => setChosenCurrency2(e.target.value)}
                 >
-                  {Currencies.map((currency, _index) => (
+                  {Currencies2.map((currency, _index) => (
                     <option key={_index} value={currency}>
                       {currency}
                     </option>
@@ -122,12 +128,19 @@ function CurrencyConverter() {
             </tr>
           </tbody>
         </table>
-        <button id="currency-convert" onClick={convert}>
+        <button className="currency-convert" onClick={convert}>
           Convert
         </button>
       </div>
-      <exchangeRate />
+      <ExchangeRate 
+
+      exchangerate = {exchangerate}
+      chosenCurrency1 = {chosenCurrency1} 
+      chosenCurrency2 = {chosenCurrency2}
      
+      
+      />
+      
     </div>
   );
 }
